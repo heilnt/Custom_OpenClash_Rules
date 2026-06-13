@@ -47,7 +47,7 @@
 
 > 🧩 **彻底告别手搓配置和多个插件套娃的繁琐设置方法，保证零基础小白也能轻松看懂。**
 
-按照本项目的 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的设置方案，搭配本项目的[订阅转换模板](https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini)，花费数分钟对 OpenClash 进行设置，无需套娃其他工具，仅依靠 OpenClash 自身即可实现更稳健的 DNS 策略与分流功能，同时配合 Dnsmasq 可实现无需第三方插件的广告拦截，并且完美兼容 IPv6。
+按照本项目的 [Wiki](https://github.com/heilnt/Custom_OpenClash_Rules/wiki) 中的设置方案，搭配本项目的[订阅转换模板](https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini)，花费数分钟对 OpenClash 进行设置，无需套娃其他工具，仅依靠 OpenClash 自身即可实现更稳健的 DNS 策略与分流功能，同时配合 Dnsmasq 可实现无需第三方插件的广告拦截，并且完美兼容 IPv6。
 
 同时也提供基于 OpenClash 远程覆写功能的配置示例。
 
@@ -87,7 +87,7 @@
 
 本项目的配置模板参考 [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master) 等规则模板进行完善，分流数据基于 GeoSite。
 
-**按照本项目 [Wiki](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki) 中的设置方案，配合本项目的订阅转换模板对 OpenClash 进行配置，即可实现以下特性，更优雅地使用你的 OpenClash：**
+**按照本项目 [Wiki](https://github.com/heilnt/Custom_OpenClash_Rules/wiki) 中的设置方案，配合本项目的订阅转换模板对 OpenClash 进行配置，即可实现以下特性，更优雅地使用你的 OpenClash：**
 
 - 🚀 **优化的 DNS 设置，尽量降低对直连访问的影响**
   > 本地站点采用运营商 DNS 解析，示例地区(CN)域名和 IP 不经 OpenClash 内核处理并返回真实 IP，让 OpenClash 对直连访问的影响降低到更小。
@@ -132,7 +132,7 @@
 > - 本项目设置方案使用 OpenClash 的 `Fake-IP` 模式，不适用 Redir-Host 模式。
 > - 本项目依赖 OpenClash 的"绕过中国大陆"功能实现效果。
 
-请按照本项目 Wiki 中的对应部分对 OpenClash 进行设置：[OpenClash-设置方案](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-设置方案)
+请按照本项目 Wiki 中的对应部分对 OpenClash 进行设置：[OpenClash-设置方案](https://github.com/heilnt/Custom_OpenClash_Rules/wiki/OpenClash-设置方案)
 
 方案中已包括了本项目订阅转换模板的使用方法，根据描述，自行选择需要使用的规则模板即可。
 
@@ -154,7 +154,7 @@
 > [!NOTE]
 > 由于本项目为自用目的，且个人时间有限，只能随缘更新，因此不提供个性化修改服务。
 
-具体个性化实现方式，请参考 Wiki 中的对应章节：[个性化需求](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E#%E5%85%B3%E4%BA%8E%E4%B8%AA%E6%80%A7%E5%8C%96%E9%9C%80%E6%B1%82)
+具体个性化实现方式，请参考 Wiki 中的对应章节：[个性化需求](https://github.com/heilnt/Custom_OpenClash_Rules/wiki/%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E#%E5%85%B3%E4%BA%8E%E4%B8%AA%E6%80%A7%E5%8C%96%E9%9C%80%E6%B1%82)
 
 ### 🈸 关于冷门直连域名收录问题
 
@@ -178,7 +178,7 @@
 
 ~~本项目借助 OpenClash 的"开发者选项"功能，实现不依赖第三方插件的广告过滤功能。~~
 
-~~具体设置见 Wiki 中的方案：[广告拦截设置方案](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/%E6%97%A0%E6%8F%92%E4%BB%B6%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E5%8A%9F%E8%83%BD%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%A1%88)~~
+~~具体设置见 Wiki 中的方案：[广告拦截设置方案](https://github.com/heilnt/Custom_OpenClash_Rules/wiki/%E6%97%A0%E6%8F%92%E4%BB%B6%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E5%8A%9F%E8%83%BD%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%A1%88)~~
 
 ~~其中提供了 Dnsmasq 格式和 hosts 格式的两种设置方法的示例，可以照抄，亦可自由设置其他任何符合格式要求的广告规则。~~
 
@@ -190,13 +190,13 @@
 
 通过正确设置 OpenWrt 的 IPv6 功能以及 OpenClash，即可实现 OpenWrt 主路由下的 IPv6 和 OpenClash 的更好兼容，并支持在 IPv6 环境下进行分流与连通性测试。
 
-OpenWrt 的 IPv6 设置方案见本项目的 Wiki：[OpenWrt-IPv6-设置方案](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenWrt-IPv6-设置方案)
+OpenWrt 的 IPv6 设置方案见本项目的 Wiki：[OpenWrt-IPv6-设置方案](https://github.com/heilnt/Custom_OpenClash_Rules/wiki/OpenWrt-IPv6-设置方案)
 
 ---
 
 ### ❓ 不能上网？分流不正常？某些网站打不开？OpenClash 不能启动？
 
-出现故障请参考 [Wiki 中的故障排除部分](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4)，内含常见问题的解决方法。
+出现故障请参考 [Wiki 中的故障排除部分](https://github.com/heilnt/Custom_OpenClash_Rules/wiki/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4)，内含常见问题的解决方法。
 
 > [!TIP]
 > 🛠️ 项目的设置方案经过众多用户验证一般不存在结构性问题，建议不要从本项目的内容上找原因，以免浪费时间。某些特定应用/服务的异常可能涉及多种因素，与模板本身未必相关。
@@ -211,7 +211,7 @@ OpenWrt 的 IPv6 设置方案见本项目的 Wiki：[OpenWrt-IPv6-设置方案](
 
 ## 🤝 贡献者
 
-<a href="https://github.com/Aethersailor/Custom_OpenClash_Rules/graphs/contributors">
+<a href="https://github.com/heilnt/Custom_OpenClash_Rules/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Aethersailor/Custom_OpenClash_Rules&anon=1" alt="贡献者列表" />
 </a>
 
@@ -255,7 +255,7 @@ OpenWrt 的 IPv6 设置方案见本项目的 Wiki：[OpenWrt-IPv6-设置方案](
 - [217heidai/adblockfilters](https://github.com/217heidai/adblockfilters)
 - [privacy-protection-tools/anti-AD](https://github.com/privacy-protection-tools/anti-AD)
 - [TG-Twilight/AWAvenue-Ads-Rule](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)
-- [Aethersailor/adblockfilters-modified](https://github.com/Aethersailor/adblockfilters-modified)
+- [Aethersailor/adblockfilters-modified](https://github.com/heilnt/adblockfilters-modified)
 
 ### ⚡ 加速规则
 
@@ -263,11 +263,11 @@ OpenWrt 的 IPv6 设置方案见本项目的 Wiki：[OpenWrt-IPv6-设置方案](
 
 ### 🔄 订阅转换后端
 
-- [Aethersailor/Subconverter-Extended](https://github.com/Aethersailor/SubConverter-Extended)
+- [Aethersailor/Subconverter-Extended](https://github.com/heilnt/SubConverter-Extended)
 
 ### 🧰 工具
 
-- [Aethersailor/Rule-Bot](https://github.com/Aethersailor/Rule-Bot)
+- [Aethersailor/Rule-Bot](https://github.com/heilnt/Rule-Bot)
 - [oooldtoy/SSTAP_ip_crawl_tool](https://github.com/oooldtoy/SSTAP_ip_crawl_tool)
 
 ### 🔖 其他
